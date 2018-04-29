@@ -10,8 +10,15 @@ app.get('/test', function(req, res) {
   });
 });
 
-app.get('*', function(req, res) {
-  res.send(404);
+app.get('/api/:page', function(req, res) {
+  res.json({
+    "api": "get"
+  });
 });
 
-app.listen(3000);
+app.get('*', function(req, res, next) {
+  res.status(404);
+  res.send('');
+});
+
+app.listen(3000)

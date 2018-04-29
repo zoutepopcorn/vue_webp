@@ -6,7 +6,7 @@ const get = () => {
   console.log("getter");
   return new Promise((res, rej) => {
     setTimeout(() => {
-      axios.get(`${BASE}get`).then(res).catch(rej)
+      axios.get(`${BASE}api/get`).then(res).catch(rej)
     }, 3000);
   });
 }

@@ -6,7 +6,10 @@
     <img src="./assets/logo.png">
     <router-link to="/hello">Hallo</router-link>
     <router-link to="/hoi">Hoi</router-link>
-    <router-view></router-view>
+    <router-link to="/vueti">Vueti</router-link>
+    <v-app>
+      <router-view></router-view>
+    </v-app>
   </div>
 </template>
 
