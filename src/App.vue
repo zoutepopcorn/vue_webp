@@ -4,7 +4,7 @@
       App
     </h1>
     <img src="./assets/logo.png">
-    <router-link to="/hallo">Hallo</router-link>
+    <router-link to="/hello">Hallo</router-link>
     <router-link to="/hoi">Hoi</router-link>
     <router-view></router-view>
   </div>
