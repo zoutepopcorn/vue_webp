@@ -5,8 +5,13 @@
 </template>
 
 <script>
+import api from '../api'
 export default {
-  name: 'hello',
+  name: 'hoi',
+  created() {
+    console.log("create hoi");
+    api.get('jaja').then(console.log).catch(console.log)
+  },
   data () {
     return {
       msg: 'dit is Hoi.vue'
